@@ -1,0 +1,18 @@
+.bg_parallax {
+  height: 100vh;
+}
+
+#pic1 {
+  background-image: url('/testProject/img/riceberry.jpg');
+  background-repeat: no-repeat;
+}
+
+#pic2 {
+  background-image: url('/testProject/img/riceberry.jpg');
+  background-repeat: no-repeat;
+
+}
+
+.padding0 {
+    padding: 0;
+}
