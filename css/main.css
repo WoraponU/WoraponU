@@ -1,18 +1,26 @@
-.bg_parallax {
-  height: 100vh;
+.bg_parallax, .bg_vh100 {
+    height: 100vh;
 }
 
 #pic1 {
-  background-image: url('/testProject/img/riceberry.jpg');
-  background-repeat: no-repeat;
-}
-
-#pic2 {
-  background-image: url('/testProject/img/riceberry.jpg');
-  background-repeat: no-repeat;
-
+    background-image: url('/testProject/img/riceberry.jpg');
+    background-repeat: no-repeat;
 }
 
 .padding0 {
     padding: 0;
 }
+
+.article-middle {
+    position: absolute;
+    left: 35%;
+
+    width: 30%;
+    height: 70vh;
+    bottom: 0;
+}
+
+.article-middle>h1 {
+    text-align: center;
+}
+
