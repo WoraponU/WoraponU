@@ -3,7 +3,7 @@
 }
 
 #pic1 {
-    background-image: url('/testProject/img/riceberry.jpg');
+    background-image: url('../../testProject/img/riceberry.jpg');
     background-repeat: no-repeat;
 }
 
