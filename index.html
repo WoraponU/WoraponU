@@ -39,27 +39,30 @@
                 text-align: center;
             }
 
-            .custom_nav {
+            .nav {
                 position: fixed;
-                top: 0;
+                display: block;
+                top: 5px;
                 right: 0;
                 z-index: 100;
+                transition: background 2s ease 0s;
             }
 
-            .custom_nav li {
+            .tran_nav {
                 background-color: red;
+            }
+            .nav li {
                 display: inline-block;
+                height: 25px;
             }
         </style>
     </head>
     <body>
         <div class="container-fluid">
             <aside>
-                <nav class="custom_nav">
+                <nav class="nav">
                     <ul>
                       <li><a href="#">Home</a></li>
-                      <li><a href="#">Profile</a></li>
-                      <li><a href="#">Messages</a></li>
                     </ul>
                 </nav>
             </aside>
@@ -105,8 +108,22 @@
         <!-- main js -->
         <script>
             $( document ).ready(function() {
+                // jarallax
                 $('.bg_parallax').parallaxScroll({
                   friction: 0.5
+                });
+
+                // detect nav
+                var $win = $(window);
+                var winH = $win.height();
+                $win.on("scroll", function () {
+                    if ($(this).scrollTop() + 1 > winH ) {
+                        $('.nav').addClass("tran_nav");
+                    } else {
+                        $('.nav').removeClass("tran_nav");
+                    }
+                }).on("resize", function(){
+                   winH = $(this).height();
                 });
             });
         </script>
