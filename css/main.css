@@ -24,14 +24,36 @@ body {
 	margin-bottom: 0;
 }
 
-/*.logo {
-	z-index: 1;
-}*/
-
 .nav.navbar-nav.navbar-right {
 	margin-top: 1px;
 }
 
 .nav.navbar-nav.navbar-right {
 	text-align: right;
+}
+
+.logo {
+	max-width: 137px;
+	min-width: 100px;
+    width: 10vw;
+    /*margin: 20px 0px 0 39px;*/
+    position: relative;
+    left: 39px;
+    top: 20px;
+}
+
+.z_index01 {
+	z-index: 1;
+}
+
+.jumbotron {
+	background: transparent;
+}
+
+.header_jumbotron {
+	text-align: right;
+}
+
+.navbar-brand {
+	padding-right: 0;
 }
