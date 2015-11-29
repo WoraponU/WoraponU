@@ -18,10 +18,10 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#navbar">
         <header>
             <div class="row">
-                <div class="bg_header"></div>
+                <div id="header-contain" class="bg_header"></div>
             </div>
         </header>
         
@@ -42,23 +42,31 @@
                 </div>
 
                 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#">คุณค่าของข้าวไรซ์เบอรี่<span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">สั่งข้าวไรซ์เบอรี่</a></li>
-                        <li><a href="#">ติดต่อเรา</a></li>
+                    <ul class="nav navbar-nav navbar-right" role="tablist">
+                        <li class="active"><a href="#benefit_container">คุณค่าของข้าวไรซ์เบอรี่<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#order_container">สั่งข้าวไรซ์เบอรี่</a></li>
+                        <li><a href="#contact_container">ติดต่อเรา</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
         <section>
-            <div class="bg_benefit">
+            <div id="benefit_container" class="bg_benefit">
                 <div class="container-fluid">
                 </div>
             </div>
         </section>
+
         <section>
-            <div class="bg_benefit">
+            <div id="order_container" class="bg_benefit">
+                <div class="container-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="contact_container" class="bg_benefit">
                 <div class="container-fluid">
                 </div>
             </div>
@@ -66,6 +74,7 @@
 
         <script src="../deliriceberry/js/plugins/jquery.min.js"></script>
         <script src="../deliriceberry/js/plugins/bootstrap.min.js"></script>
+        <script src="../deliriceberry/js/plugins/parallax.min.js"></script>
         <script src="../deliriceberry/js/main.js"></script>
     </body>
 </html>

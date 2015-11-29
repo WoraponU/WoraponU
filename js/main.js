@@ -3,7 +3,7 @@ $( document ).ready(function() {
         var viewPortHeight = $(window).height();
         var scrollHeight = $(window).scrollTop();
 
-        if (scrollHeight > viewPortHeight - 35) {
+        if (scrollHeight > viewPortHeight - 50) {
             $('#navbar').addClass('navbar-fixed-top');
         } else {
             $('#navbar').removeClass('navbar-fixed-top');
