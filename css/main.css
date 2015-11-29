@@ -4,11 +4,19 @@ body {
 }
 
 .bg_header {
-	background-image: url("../img/bg_head.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
 	height: 92vh;
 	width: 100vw;
+}
+
+.bg_benefit {
+    z-index: -1;
+	width: 100vw;
+    height: 100vh;
+}
+
+.parallax_scroll {
+	background: transparent;
+	background-size: cover;
 }
 
 .navbar.navbar-inverse {
@@ -16,13 +24,9 @@ body {
 	margin-bottom: 0;
 }
 
-.logo {
+/*.logo {
 	z-index: 1;
-}
-
-.nav__brand_head {
-	z-index: 1;
-}
+}*/
 
 .nav.navbar-nav.navbar-right {
 	margin-top: 1px;
@@ -30,24 +34,4 @@ body {
 
 .nav.navbar-nav.navbar-right {
 	text-align: right;
-}
-
-h3.nav__brand_head {
-	margin-top: 11px;
-	color: white;
-}
-
-h5.nav__brand_head {
-	margin-top: -11px;
-	z-index: 1;
-	color: white;
-}
-
-.bg_benefit {
-	background-image: url("../img/bg_benefit.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-	width: 100vw;
-    height: 100vh;
 }
